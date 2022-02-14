@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
+*/
+
+body {
+    width: 100%; /*Largura da pagina*/
+    height: 100%; /*Altura da pagina*/
+    margin: 0 auto; /*Margem (sem margem)*/
+}
+
+ul {
+    padding: 0px!important;
+}
+
+.menu-principal {
+    width: 100%;
+    background-color: #252323;
+    height: 60px;
+}
+
+main, .content {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    padding: 16px;
+    width: 70%;
+}
+
+.redes-sociais ul li {
+    margin-left: 25px;
+    display: inline-block;
+    float: left;
+    list-style: none;
+}
+
+.redes-sociais {
+    width: 25%;
+    float: right;
+}
+
+.header-2 {
+    background-color: #FFFFFF;
+    width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.menu-urls {
+    height: 80px;
+    border-bottom: 3px solid #efefef;
+}
+
+.menu ul li {
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 15px;
+    height: 50px;
+}
+
+.menu ul li:hover {
+    border-bottom: 2px solid #00bac6; /*Efeito na borda abaixo*/
+}
+
+.menu ul li a:hover { /*Atribuir efeitos com hover*/
+    color: #00bac6;
+}
+
+.menu ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.menu {
+    width: 70%;
+    float: left;
+}
+
+.busca {
+    text-align: center;
+    width: 30%;
+    float: left;
+}
+
+.busca input {
+    background-image: url(/assets/img/icone-search.png); /*Adicionar imagem*/
+    background-repeat: no-repeat; /*Não repetir a imagem*/
+    background-position: 96%; /*Posicionar a imagem*/
+    height: 20px;
+    padding: 8px;
+    width: 190px;
+    margin-top: 5px;
+    border: 1px solid #d6d6d6; /*Estilizar a borda*/
+}
+
+.col-100 {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+button.slick-prev { /*Estilizando o botão seta esquerda*/
+    font-size: 0px; /*resetar a fonte*/
+    border: none; /*Tirar a borda*/
+    width: 25px; /*Largura da imagem*/
+    height: 51px; /*Altura da imagem*/
+    background-color: transparent;
+    background-image: url(/assets/img/anterior.png);
+    position: absolute; /*A posição do objeto será absoluta*/
+    z-index: 9; /*Colocara o objeto em posição acima dos outros ou na frente*/
+    top: 35%; /*Posição do objeto com relação a altura*/
+    left: 14%;
+}
+
+button.slick-next { /*Estilizando o botão seta esquerda*/
+    font-size: 0px; /*resetar a fonte*/
+    border: none; /*Tirar a borda*/
+    width: 25px; /*Largura da imagem*/
+    height: 51px; /*Altura da imagem*/
+    background-color: transparent;
+    background-image: url(/assets/img/proximo.png);
+    position: absolute; /*A posição do objeto será absoluta*/
+    z-index: 9; /*Colocara o objeto em posição acima dos outros ou na frente*/
+    top: 35%; /*Posição do objeto com relação a altura*/
+    right: 14%;
+}
+
+.slider-principal {
+    width: 100%!important;
+}
+
+.slick-list {
+    width: 100%!important;
+}
+
+.slick-inicialized {
+    overflow: hidden;
+}
+
+.slick-dots li button {
+    font-size: 0px;
+    border: 5px solid #FFFFFF;
+    width: 26px;
+    height: 26px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-dots {
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 500px;
+}
+
+li.slick-active button {
+    background: #00bac6;
+}
+
+.slick-dots li {
+    padding-left: 10px;
+    display: inline-block; /*Deixa cada botão um do lado do outro*/
+}
+
+.texto-destaque {
+    text-align: center;
+}
+
+.texto-destaque strong {
+    color: #646464;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+}
+
+.texto-destaque h1 {
+    color: #818181;
+    font-size: 30px;
+    text-transform: uppercase; /*Transformar o texto (maiuscula, etc.)*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+.texto-destaque p {
+    color: #9a9a9a;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.down {
+    padding-top: 20px;
+}
+
+.up {
+    padding-top: -25px;
+}
+
+.col-3 {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 29%;
+    float: left;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color: #818181;
+
+}
+
+.bloco-imagem img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.bloco-imagem {
+    height: 300px; /*Deixar todo os objetos com o mesmo tamanho*/
+    border: 1px solid #c5c5c5;
+    padding-top: 15px; /*Distancia entre os elementos*/
+    padding-bottom: 15px;
+    margin-left: 10px; /*Espaçamento entre os elementos*/
+    font-size: 13px;
+}
+
+.bloco-imagem b, p {
+    text-align: left;
+}
+
+.bloco-texto {
+    margin-top: 3em;
+}
+
+h3 {
+    font-weight: normal!important;
+}
+
+.bloco-imagens-texto {
+    background-color: #eeeeee;
+}
+
+.bloco-imagens-texto::before {
+    width: 100%;
+    display: inline-block;
+    content: '';
+    height: 52px;
+    background: #ffffff;
+    background-image: url(/assets/img/setinha.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bloco-imagens-texto::after {
+    width: 100%;
+    display: inline-block;
+    content: '';
+    height: 70px;
+    background: #eeeeee;
+}
+
+.col-4, .col-4-1 {
+    display: inline-block;
+    float: left; /*Colocar os objetos na horizontal a esquerda*/
+    width: 25%;
+    text-align: center;
+}
+
+.col-4 img {
+    cursor: pointer;
+    margin: 0 auto;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    vertical-align: middle;
+}
+
+.col-4-1 img {
+    cursor: pointer;
+    margin: 0 auto;
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+    vertical-align: middle;
+}
+
+.footer {
+    background-image: url(/assets/img/footer.png);
+    color: #ffffff;
+    font-size: 13px;
+    font-family: 'PT Sans', sans-serif;
+    padding: 20px 30px;
+}
+
+.footer h3 {
+    text-align: left;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+}
+
+.footer p {
+    width: 75%;
+    text-align: left;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 1.6;
+}
+
+.footer-2 {
+    background-image: url(/assets/img/footer2.png);
+    color: #c1c1c1;
+    height: 60px;
+    padding-top: 15px;
+}
+
+.footer-2 p {
+    float: left;
+}
+
+.redes-sociais-footer ul li {
+    margin-left: 25px;
+    display: inline-block;
+    float: left;
+    list-style: none;
+}
+
+.redes-sociais-footer {
+    width: 38%;
+    float: right;
+}
+
+.clock {
+    color: #898989;
+}
+
+.border {
+    padding-bottom: 10px;
+    border-top: 1px solid #666363;
+    width: 90%;
+}
+
+.clock::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url(/assets/img/clock.png);
+    float: left;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+
+.local::before, .emailico::before, .telefoneico::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    float: left;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+
+.local::before {
+    background-image: url(/assets/img/local.png);
+}
+
+.emailico::before {
+    background-image: url(/assets/img/email.png);
+}
+
+.telefoneico::before {
+    background-image: url(/assets/img/telefoneico.png);
+}
